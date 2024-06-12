@@ -1,0 +1,121 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('../image/background.png'); /* Replace 'background-image.jpg' with the path to your image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  color: #fff;
+  animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+h1 {
+  margin-top: 20px;
+  text-align: center;
+  margin-top: 50px;
+  color: #fff;
+  animation: slideInDown 1s ease-in-out; /* Slide-in animation */
+}
+
+form {
+  width: 500px;
+  margin: 50px auto;
+  padding: 20px 0px 20px 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  animation: slideInUp 1s ease-in-out; /* Slide-in animation */
+}
+
+@keyframes slideInUp {
+  0% {
+      transform: translateY(50px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #fff;
+  animation: fadeInLeft 1s ease-in-out; /* Fade-in animation */
+}
+
+select,
+input[type="number"] {
+  width: 90%;
+  padding: 10px;
+  margin: auto;
+  font-size: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.7);
+  animation: fadeInRight 1s ease-in-out; /* Fade-in animation */
+}
+
+select
+{
+  width: 95%;
+}
+
+button[type="submit"] {
+  width: 95%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  animation: fadeInUp 1s ease-in-out; /* Fade-in animation */
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+
+h2 {
+  text-align: center;
+}
+
+#result {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+/* prevent the scroll bar from appearing */
+body {
+  overflow: hidden;
+}
